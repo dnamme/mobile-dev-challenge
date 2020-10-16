@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(App());
 
@@ -25,8 +25,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext buildContext) {
     return Scaffold(
       appBar: AppBar(),
-      body:
-          new Container(child: new Column(children: [new Text('Hello World')])),
+      body: new Container(
+          child: new Column(children: [
+        new Text('Hello World', style: GoogleFonts.roboto())
+      ])),
       /*bottomNavigationBar: new BottomNavigationBar(
             iconSize: 30.00,
             showUnselectedLabels: true,
