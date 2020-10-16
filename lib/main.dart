@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -49,8 +51,10 @@ class _HomeState extends State<Home> {
               new BottomNavigationBarItem(
                   icon: new Icon(Icons.ac_unit), label: 'Learn'),
               new BottomNavigationBarItem(
-                  icon: new Image.asset('assets/icons/profile_64px.png',
-                      width: 30.00, height: 30.00),
+                  icon: new IconButton(
+                    icon: new Image.asset('assets/icons/profile_64px.png'),
+                    onPressed: null,
+                  ),
                   label: 'Profile')
             ]));
   }
