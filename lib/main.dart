@@ -35,13 +35,15 @@ class _HomeState extends State<Home> {
             iconSize: 30.00,
             showUnselectedLabels: true,
             unselectedItemColor: Color(0xffc2c2c2),
-            // unselectedLabelStyle: //TextStyle(
-            //     GoogleFonts.roboto(
-            //         fontSize: 12.50, fontWeight: FontWeight.w500),
+            unselectedLabelStyle: GoogleFonts.roboto(
+              fontSize: 12.50,
+              fontWeight: FontWeight.w500,
+            ),
             selectedItemColor: Color(0xff2d384c),
-            // selectedLabelStyle: //TextStyle(
-            //     GoogleFonts.roboto(
-            //         fontSize: 12.50, fontWeight: FontWeight.w500),
+            selectedLabelStyle: GoogleFonts.roboto(
+              fontSize: 12.50,
+              fontWeight: FontWeight.w500,
+            ),
             currentIndex: 0,
             items: [
               new BottomNavigationBarItem(
