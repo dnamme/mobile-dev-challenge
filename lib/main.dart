@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
                               ))
                         ]))),
                 new Padding(
-                    padding: EdgeInsets.fromLTRB(12.5, 40.0, 12.5, 7.5),
+                    padding: EdgeInsets.fromLTRB(12.5, 30.0, 12.5, 2.5),
                     child: new Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -91,16 +91,19 @@ class _HomeState extends State<Home> {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(15.0))),
                             padding: EdgeInsets.fromLTRB(3.0, 1.0, 7.5, 1.0),
-                            child: new Row(
-                              children: [
+                            child: GestureDetector(
+                              onTap: () {},
+                              child: new Row(children: [
                                 new Icon(Icons.star_rounded,
                                     color: Color(0xff2d384c), size: 17.5),
-                                new Text('UPGRADE',
-                                    style: GoogleFonts.roboto(
-                                        color: Color(0xff2d384c),
-                                        fontSize: 12.5,
-                                        fontWeight: FontWeight.w500))
-                              ],
+                                new Padding(
+                                    padding: EdgeInsets.only(left: 3.0),
+                                    child: new Text('UPGRADE',
+                                        style: GoogleFonts.roboto(
+                                            color: Color(0xff2d384c),
+                                            fontSize: 12.5,
+                                            fontWeight: FontWeight.w500)))
+                              ]),
                             ),
                           )
                         ])),
@@ -209,7 +212,7 @@ class _HomeState extends State<Home> {
                               )),
                         ]))),
                 new Padding(
-                    padding: EdgeInsets.fromLTRB(12.5, 7.5, 12.5, 7.5),
+                    padding: EdgeInsets.fromLTRB(12.5, 2.5, 12.5, 2.5),
                     child: new Text('Curious',
                         style: GoogleFonts.roboto(
                             color: Color(0xff2d384c),
