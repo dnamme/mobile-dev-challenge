@@ -36,9 +36,11 @@ class _HomeState extends State<Home> {
                 children: [
                   new Container(
                       decoration: BoxDecoration(
-                          color: Color(0xfffdbd4e), //fdbd4e
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(12.5))),
+                          color: Color(0xfffdbd4e),
+                          borderRadius: BorderRadius.all(Radius.circular(12.5)),
+                          boxShadow: [
+                            new BoxShadow(color: Colors.grey, blurRadius: 5.0)
+                          ]),
                       child: new Column(children: [
                         new Stack(children: [
                           new Image.asset(
@@ -100,47 +102,59 @@ class _HomeState extends State<Home> {
                               ),
                             )
                           ])),
-                  new Container(
-                      decoration: BoxDecoration(
-                          color: Color(0xff2d384c),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(15.0))),
-                      width: 175.0,
-                      child: new Column(
-                        children: [
-                          new Stack(children: [
-                            new Image.asset('assets/img/Meow_Meow_Eating.png',
-                                width: 175.0),
-                            Positioned(
-                                top: 3.0,
-                                right: 7.5,
-                                child: new Icon(Icons.star_rounded,
-                                    color: Color(0xfffdbd4e), size: 35.0))
-                          ]),
-                          new Container(
-                              child: new Padding(
-                                  padding:
-                                      EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 15.0),
-                                  child: new Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        new Text('The 8 best cat foods to buy',
-                                            style: GoogleFonts.roboto(
-                                                color: Color(0xffffffff),
-                                                fontSize: 12.5,
-                                                fontWeight: FontWeight.w500)),
-                                        new Text('8 minutes',
-                                            style: GoogleFonts.roboto(
-                                                color: Color(0xaaffffff),
-                                                fontSize: 12.5,
-                                                fontWeight: FontWeight.w500))
-                                      ])))
-                        ],
-                      )),
-                  new Column(),
-                  new Column(),
-                  new Column()
+                  new SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: new Row(children: [
+                        new Container(
+                            decoration: BoxDecoration(
+                                color: Color(0xff2d384c),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15.0)),
+                                boxShadow: [
+                                  new BoxShadow(
+                                      color: Colors.grey, blurRadius: 5.0)
+                                ]),
+                            width: 180.0,
+                            child: new Column(
+                              children: [
+                                new Stack(children: [
+                                  new Image.asset(
+                                      'assets/img/Meow_Meow_Eating.png',
+                                      width: 180.0),
+                                  Positioned(
+                                      top: 3.0,
+                                      right: 7.5,
+                                      child: new Icon(Icons.star_rounded,
+                                          color: Color(0xfffdbd4e), size: 35.0))
+                                ]),
+                                new Container(
+                                    child: new Padding(
+                                        padding: EdgeInsets.fromLTRB(
+                                            5.0, 5.0, 5.0, 12.5),
+                                        child: new Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              new Text(
+                                                  'The 8 best cat foods to buy',
+                                                  style: GoogleFonts.roboto(
+                                                      color: Color(0xffffffff),
+                                                      fontSize: 12.5,
+                                                      fontWeight:
+                                                          FontWeight.w500)),
+                                              new Text('8 minutes',
+                                                  style: GoogleFonts.roboto(
+                                                      color: Color(0xaaffffff),
+                                                      fontSize: 12.5,
+                                                      fontWeight:
+                                                          FontWeight.w500))
+                                            ])))
+                              ],
+                            )),
+                        new Column(),
+                        new Column(),
+                        new Column()
+                      ]))
                 ],
               ),
             )
