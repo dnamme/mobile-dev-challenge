@@ -31,50 +31,56 @@ class _HomeState extends State<Home> {
         body: new CustomPaint(
             painter: BackgroundPainter(),
             child: new SingleChildScrollView(
-              padding: EdgeInsets.fromLTRB(12.5, 50.0, 12.5, 10.0),
+              padding: EdgeInsets.only(top: 50.0, bottom: 15.0),
+              // padding: EdgeInsets.fromLTRB(12.5, 50.0, 12.5, 10.0),
               child: new Column(
                 children: [
-                  new Container(
-                      decoration: BoxDecoration(
-                          color: Color(0xfffdbd4e),
-                          borderRadius: BorderRadius.all(Radius.circular(12.5)),
-                          boxShadow: [
-                            new BoxShadow(color: Colors.grey, blurRadius: 5.0)
-                          ]),
-                      child: new Column(children: [
-                        new Stack(children: [
-                          new Image.asset(
-                              'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
-                          Positioned(
-                              left: 25.0,
-                              child: new Image.asset(
-                                  'assets/icons/bookmark.png',
-                                  width: 25.0)), // TODO: find icon
-                        ]),
-                        new Padding(
-                            padding:
-                                EdgeInsets.fromLTRB(17.5, 12.5, 25.0, 12.5),
-                            child: new Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                new Text('10 Tips for Healthy, Happy Dogs',
-                                    style: GoogleFonts.roboto(
-                                        color: Color(0xff2d384c),
-                                        fontSize: 25.0,
-                                        fontWeight: FontWeight.w500)),
-                                new Padding(
-                                    padding: EdgeInsets.only(top: 5.0),
-                                    child: new Text('12 minutes',
-                                        style: GoogleFonts.roboto(
-                                          color: Color(0xaa2d384c), // 43 (67)
-                                          fontSize: 12.50,
-                                          fontWeight: FontWeight.w500,
-                                        )))
-                              ],
-                            ))
-                      ])),
                   new Padding(
-                      padding: EdgeInsets.only(top: 40.0, bottom: 25.0),
+                      padding: EdgeInsets.only(left: 12.5, right: 12.5),
+                      child: new Container(
+                          decoration: BoxDecoration(
+                              color: Color(0xfffdbd4e),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(12.5)),
+                              boxShadow: [
+                                new BoxShadow(
+                                    color: Colors.grey, blurRadius: 5.0)
+                              ]),
+                          child: new Column(children: [
+                            new Stack(children: [
+                              new Image.asset(
+                                  'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
+                              Positioned(
+                                  left: 25.0,
+                                  child: new Image.asset(
+                                      'assets/icons/bookmark.png',
+                                      width: 25.0)), // TODO: find icon
+                            ]),
+                            new Padding(
+                                padding:
+                                    EdgeInsets.fromLTRB(17.5, 12.5, 25.0, 12.5),
+                                child: new Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    new Text('10 Tips for Healthy, Happy Dogs',
+                                        style: GoogleFonts.roboto(
+                                            color: Color(0xff2d384c),
+                                            fontSize: 25.0,
+                                            fontWeight: FontWeight.w500)),
+                                    new Padding(
+                                        padding: EdgeInsets.only(top: 5.0),
+                                        child: new Text('12 minutes',
+                                            style: GoogleFonts.roboto(
+                                              color:
+                                                  Color(0xaa2d384c), // 43 (67)
+                                              fontSize: 12.50,
+                                              fontWeight: FontWeight.w500,
+                                            )))
+                                  ],
+                                ))
+                          ]))),
+                  new Padding(
+                      padding: EdgeInsets.fromLTRB(12.5, 40.0, 12.5, 25.0),
                       child: new Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -102,59 +108,110 @@ class _HomeState extends State<Home> {
                               ),
                             )
                           ])),
-                  new SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: new Row(children: [
-                        new Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xff2d384c),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(15.0)),
-                                boxShadow: [
-                                  new BoxShadow(
-                                      color: Colors.grey, blurRadius: 5.0)
-                                ]),
-                            width: 180.0,
-                            child: new Column(
-                              children: [
-                                new Stack(children: [
-                                  new Image.asset(
-                                      'assets/img/Meow_Meow_Eating.png',
-                                      width: 180.0),
-                                  Positioned(
-                                      top: 3.0,
-                                      right: 7.5,
-                                      child: new Icon(Icons.star_rounded,
-                                          color: Color(0xfffdbd4e), size: 35.0))
-                                ]),
-                                new Container(
-                                    child: new Padding(
-                                        padding: EdgeInsets.fromLTRB(
-                                            5.0, 5.0, 5.0, 12.5),
-                                        child: new Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              new Text(
-                                                  'The 8 best cat foods to buy',
-                                                  style: GoogleFonts.roboto(
-                                                      color: Color(0xffffffff),
-                                                      fontSize: 12.5,
-                                                      fontWeight:
-                                                          FontWeight.w500)),
-                                              new Text('8 minutes',
-                                                  style: GoogleFonts.roboto(
-                                                      color: Color(0xaaffffff),
-                                                      fontSize: 12.5,
-                                                      fontWeight:
-                                                          FontWeight.w500))
-                                            ])))
-                              ],
-                            )),
-                        new Column(),
-                        new Column(),
-                        new Column()
-                      ]))
+                  new Padding(
+                      padding: EdgeInsets.only(left: 12.5),
+                      child: new SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: new Row(children: [
+                            new Container(
+                                decoration: BoxDecoration(
+                                    color: Color(0xff2d384c),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(15.0)),
+                                    boxShadow: [
+                                      new BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ]),
+                                margin: EdgeInsets.only(right: 12.5),
+                                child: new Column(
+                                  children: [
+                                    new Stack(children: [
+                                      new Image.asset(
+                                          'assets/img/Meow_Meow_Eating.png',
+                                          height: 90.0),
+                                      Positioned(
+                                          top: 3.0,
+                                          right: 7.5,
+                                          child: new Icon(Icons.star_rounded,
+                                              color: Color(0xfffdbd4e),
+                                              size: 35.0))
+                                    ]),
+                                    new Container(
+                                        child: new Padding(
+                                            padding: EdgeInsets.fromLTRB(
+                                                5.0, 7.0, 5.0, 12.5),
+                                            child: new Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  new Text(
+                                                      'The 8 best cat foods to buy',
+                                                      style: GoogleFonts.roboto(
+                                                          color:
+                                                              Color(0xffffffff),
+                                                          fontSize: 12.5,
+                                                          fontWeight:
+                                                              FontWeight.w500)),
+                                                  new Text('8 minutes',
+                                                      style: GoogleFonts.roboto(
+                                                          color:
+                                                              Color(0xaaffffff),
+                                                          fontSize: 12.5,
+                                                          fontWeight:
+                                                              FontWeight.w500))
+                                                ])))
+                                  ],
+                                )),
+                            new Container(
+                                decoration: BoxDecoration(
+                                    color: Color(0xff2d384c),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(15.0)),
+                                    boxShadow: [
+                                      new BoxShadow(
+                                          color: Colors.grey, blurRadius: 5.0)
+                                    ]),
+                                margin: EdgeInsets.only(right: 12.5),
+                                child: new Column(
+                                  children: [
+                                    new Stack(children: [
+                                      new Image.asset(
+                                          'assets/img/Rat_Drops.png',
+                                          height: 90.0),
+                                      Positioned(
+                                          top: 3.0,
+                                          right: 7.5,
+                                          child: new Icon(Icons.star_rounded,
+                                              color: Color(0xfffdbd4e),
+                                              size: 35.0))
+                                    ]),
+                                    new Container(
+                                        child: new Padding(
+                                            padding: EdgeInsets.fromLTRB(
+                                                5.0, 7.0, 5.0, 12.5),
+                                            child: new Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  new Text(
+                                                      'Pet medical that you sho...',
+                                                      style: GoogleFonts.roboto(
+                                                          color:
+                                                              Color(0xffffffff),
+                                                          fontSize: 12.5,
+                                                          fontWeight:
+                                                              FontWeight.w500)),
+                                                  new Text('9 minutes',
+                                                      style: GoogleFonts.roboto(
+                                                          color:
+                                                              Color(0xaaffffff),
+                                                          fontSize: 12.5,
+                                                          fontWeight:
+                                                              FontWeight.w500))
+                                                ])))
+                                  ],
+                                )),
+                          ])))
                 ],
               ),
             )
