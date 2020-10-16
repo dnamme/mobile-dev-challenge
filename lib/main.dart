@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         body: new CustomPaint(
             painter: BackgroundPainter(),
             child: new SingleChildScrollView(
@@ -149,7 +149,59 @@ class _HomeState extends State<Home> {
             // #Pet medical that you sho...
             // #Do you know fish likes to...
             ),
-        bottomNavigationBar: new BottomNavigationBar(
+        bottomNavigationBar: new Container(
+            color: Colors.white,
+            height: 50.0,
+            child: new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                new Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    new Image.asset('assets/icons/discover.png', width: 30.0),
+                    new Text('Discover',
+                        style: GoogleFonts.roboto(
+                            color: Color(0xff2d384c),
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w500))
+                  ],
+                ),
+                new Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    new Image.asset('assets/icons/maps.png', width: 21.5),
+                    new Text('Maps',
+                        style: GoogleFonts.roboto(
+                            color: Color(0xffc2c2c2),
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w500))
+                  ],
+                ),
+                new Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    new Image.asset('assets/icons/learn.png', width: 42.5),
+                    new Text('Learn',
+                        style: GoogleFonts.roboto(
+                            color: Color(0xffc2c2c2),
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w500))
+                  ],
+                ),
+                new Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    new Image.asset('assets/icons/profile.png', width: 30.0),
+                    new Text('Discover',
+                        style: GoogleFonts.roboto(
+                            color: Color(0xffc2c2c2),
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w500))
+                  ],
+                )
+              ],
+            ))
+        /*bottomNavigationBar: new BottomNavigationBar(
             // TODO : work on sizing, convert to row
             iconSize: 30.0,
             showUnselectedLabels: true,
@@ -179,7 +231,8 @@ class _HomeState extends State<Home> {
                   icon:
                       new Image.asset('assets/icons/profile.png', width: 30.0),
                   label: 'Profile'),
-            ]));
+            ])*/
+        );
   }
 }
 
@@ -188,8 +241,8 @@ class BackgroundPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = new Paint();
 
-    paint.color = Colors.white;
-    canvas.drawRect(new Rect.fromLTRB(0, 0, size.width, size.height), paint);
+    // paint.color = Colors.white;
+    // canvas.drawRect(new Rect.fromLTRB(0, 0, size.width, size.height), paint);
 
     paint.color = Color(0xfffdbd4e);
     canvas.drawRect(new Rect.fromLTRB(0, 0, size.width, 170), paint);
