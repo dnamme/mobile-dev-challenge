@@ -27,6 +27,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
+        backgroundColor: Colors.white,
         body: new CustomPaint(
             painter: BackgroundPainter(),
             child: new SingleChildScrollView(
@@ -43,10 +44,10 @@ class _HomeState extends State<Home> {
                           new Image.asset(
                               'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
                           Positioned(
-                              left: 30.0,
-                              child: new Icon(Icons.bookmark,
-                                  color: Color(0xff2d384c),
-                                  size: 50.0)), // TODO: find icon
+                              left: 25.0,
+                              child: new Image.asset(
+                                  'assets/icons/bookmark.png',
+                                  width: 25.0)), // TODO: find icon
                         ]),
                         new Padding(
                             padding:
@@ -70,44 +71,6 @@ class _HomeState extends State<Home> {
                               ],
                             ))
                       ])),
-                  // new Stack(children: [
-                  //   new Image.asset(
-                  //       'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
-                  //   Positioned(
-                  //       left: 30.0,
-                  //       child: new Icon(Icons.bookmark,
-                  //           color: Color(0xff2d384c),
-                  //           size: 50.0)) // TODO: find icon
-                  // ]),
-                  // new Container(
-                  //     decoration: BoxDecoration(
-                  //         // boxShadow: [
-                  //         //   BoxShadow(blurRadius: 5.0, spreadRadius: 5.0)
-                  //         // ],
-                  //         color: Color(0xfffdbd4e),
-                  //         borderRadius: BorderRadius.only(
-                  //             bottomLeft: Radius.circular(15.0),
-                  //             bottomRight: Radius.circular(15.0))),
-                  //     child: new Padding(
-                  //         padding: EdgeInsets.fromLTRB(17.5, 12.5, 25.0, 12.5),
-                  //         child: new Column(
-                  //           crossAxisAlignment: CrossAxisAlignment.start,
-                  //           children: [
-                  //             new Text('10 Tips for Healthy, Happy Dogs',
-                  //                 style: GoogleFonts.roboto(
-                  //                     color: Color(0xff2d384c),
-                  //                     fontSize: 25.0,
-                  //                     fontWeight: FontWeight.w500)),
-                  //             new Padding(
-                  //                 padding: EdgeInsets.only(top: 5.0),
-                  //                 child: new Text('12 minutes',
-                  //                     style: GoogleFonts.roboto(
-                  //                       color: Color(0xaa2d384c), // 43 (67)
-                  //                       fontSize: 12.50,
-                  //                       fontWeight: FontWeight.w500,
-                  //                     )))
-                  //           ],
-                  //         ))),
                   new Padding(
                       padding: EdgeInsets.only(top: 40.0, bottom: 25.0),
                       child: new Row(
@@ -155,12 +118,6 @@ class _HomeState extends State<Home> {
                                     color: Color(0xfffdbd4e), size: 35.0))
                           ]),
                           new Container(
-                              // decoration: BoxDecoration(
-                              //     color: Color(0xff2d384c),
-                              //     borderRadius: BorderRadius.only(
-                              //         bottomLeft: Radius.circular(15.0),
-                              //         bottomRight: Radius.circular(15.0))),
-                              // width: 175.0,
                               child: new Padding(
                                   padding:
                                       EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 15.0),
@@ -193,6 +150,7 @@ class _HomeState extends State<Home> {
             // #Do you know fish likes to...
             ),
         bottomNavigationBar: new BottomNavigationBar(
+            // TODO : work on sizing, convert to row
             iconSize: 30.0,
             showUnselectedLabels: true,
             unselectedItemColor: Color(0xffc2c2c2),
@@ -208,18 +166,19 @@ class _HomeState extends State<Home> {
             currentIndex: 0,
             items: [
               new BottomNavigationBarItem(
-                  icon: new Icon(Icons.ac_unit), label: 'Discover'),
+                  icon:
+                      new Image.asset('assets/icons/discover.png', width: 30.0),
+                  label: 'Discover'),
               new BottomNavigationBarItem(
-                  icon: new Icon(Icons.place_outlined), label: 'Maps'),
+                  icon: new Image.asset('assets/icons/maps.png', width: 21.5),
+                  label: 'Maps'),
               new BottomNavigationBarItem(
-                  icon: new Icon(Icons.ac_unit), label: 'Learn'),
+                  icon: new Image.asset('assets/icons/learn.png', width: 42.5),
+                  label: 'Learn'),
               new BottomNavigationBarItem(
-                  icon: new IconButton(
-                    icon: new Image.asset('assets/icons/profile_64px.png',
-                        width: 30.0, height: 30.0),
-                    onPressed: null,
-                  ),
-                  label: 'Profile')
+                  icon:
+                      new Image.asset('assets/icons/profile.png', width: 30.0),
+                  label: 'Profile'),
             ]));
   }
 }

@@ -54,7 +54,11 @@ flutter:
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
   assets:
-    - assets/icons/profile_64px.png
+    - assets/icons/bookmark.png
+    - assets/icons/discover.png
+    - assets/icons/learn.png
+    - assets/icons/maps.png
+    - assets/icons/profile.png
     - assets/img/Dog_and_Hooman.png
     - assets/img/Judger_Mantis.png
     - assets/img/Koi_Desuu.png
