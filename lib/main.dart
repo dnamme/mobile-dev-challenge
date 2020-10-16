@@ -32,8 +32,8 @@ class _HomeState extends State<Home> {
           new Text('Hello World', style: GoogleFonts.roboto())
         ])),
         bottomNavigationBar: new BottomNavigationBar(
-            // iconSize: 30.00,
-            // showUnselectedLabels: true,
+            iconSize: 30.00,
+            showUnselectedLabels: true,
             // unselectedItemColor: Color(0xffc2c2c2),
             // unselectedLabelStyle: //TextStyle(
             //     GoogleFonts.roboto(
