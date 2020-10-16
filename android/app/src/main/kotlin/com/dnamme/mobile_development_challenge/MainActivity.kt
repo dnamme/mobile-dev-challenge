@@ -1,0 +1,6 @@
+package com.dnamme.mobile_development_challenge
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
