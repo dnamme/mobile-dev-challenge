@@ -33,46 +33,81 @@ class _HomeState extends State<Home> {
               padding: EdgeInsets.fromLTRB(12.5, 50.0, 12.5, 10.0),
               child: new Column(
                 children: [
-                  new Stack(
-                    children: [
-                      new Image.asset(
-                          'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
-                      Positioned(
-                          left: 30.0,
-                          child: new Icon(Icons.bookmark,
-                              color: Color(0xff2d384c),
-                              size: 50.0)) // TODO: find icon
-                    ],
-                  ),
                   new Container(
                       decoration: BoxDecoration(
-                          // boxShadow: [
-                          //   BoxShadow(blurRadius: 5.0, spreadRadius: 5.0)
-                          // ],
-                          color: Color(0xfffdbd4e),
-                          borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(15.0),
-                              bottomRight: Radius.circular(15.0))),
-                      child: new Padding(
-                          padding: EdgeInsets.fromLTRB(17.5, 12.5, 25.0, 12.5),
-                          child: new Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              new Text('10 Tips for Healthy, Happy Dogs',
-                                  style: GoogleFonts.roboto(
-                                      color: Color(0xff2d384c),
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.w500)),
-                              new Padding(
-                                  padding: EdgeInsets.only(top: 5.0),
-                                  child: new Text('12 minutes',
-                                      style: GoogleFonts.roboto(
-                                        color: Color(0xaa2d384c), // 43 (67)
-                                        fontSize: 12.50,
-                                        fontWeight: FontWeight.w500,
-                                      )))
-                            ],
-                          ))),
+                          color: Color(0xfffdbd4e), //fdbd4e
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(12.5))),
+                      child: new Column(children: [
+                        new Stack(children: [
+                          new Image.asset(
+                              'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
+                          Positioned(
+                              left: 30.0,
+                              child: new Icon(Icons.bookmark,
+                                  color: Color(0xff2d384c),
+                                  size: 50.0)), // TODO: find icon
+                        ]),
+                        new Padding(
+                            padding:
+                                EdgeInsets.fromLTRB(17.5, 12.5, 25.0, 12.5),
+                            child: new Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                new Text('10 Tips for Healthy, Happy Dogs',
+                                    style: GoogleFonts.roboto(
+                                        color: Color(0xff2d384c),
+                                        fontSize: 25.0,
+                                        fontWeight: FontWeight.w500)),
+                                new Padding(
+                                    padding: EdgeInsets.only(top: 5.0),
+                                    child: new Text('12 minutes',
+                                        style: GoogleFonts.roboto(
+                                          color: Color(0xaa2d384c), // 43 (67)
+                                          fontSize: 12.50,
+                                          fontWeight: FontWeight.w500,
+                                        )))
+                              ],
+                            ))
+                      ])),
+                  // new Stack(children: [
+                  //   new Image.asset(
+                  //       'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
+                  //   Positioned(
+                  //       left: 30.0,
+                  //       child: new Icon(Icons.bookmark,
+                  //           color: Color(0xff2d384c),
+                  //           size: 50.0)) // TODO: find icon
+                  // ]),
+                  // new Container(
+                  //     decoration: BoxDecoration(
+                  //         // boxShadow: [
+                  //         //   BoxShadow(blurRadius: 5.0, spreadRadius: 5.0)
+                  //         // ],
+                  //         color: Color(0xfffdbd4e),
+                  //         borderRadius: BorderRadius.only(
+                  //             bottomLeft: Radius.circular(15.0),
+                  //             bottomRight: Radius.circular(15.0))),
+                  //     child: new Padding(
+                  //         padding: EdgeInsets.fromLTRB(17.5, 12.5, 25.0, 12.5),
+                  //         child: new Column(
+                  //           crossAxisAlignment: CrossAxisAlignment.start,
+                  //           children: [
+                  //             new Text('10 Tips for Healthy, Happy Dogs',
+                  //                 style: GoogleFonts.roboto(
+                  //                     color: Color(0xff2d384c),
+                  //                     fontSize: 25.0,
+                  //                     fontWeight: FontWeight.w500)),
+                  //             new Padding(
+                  //                 padding: EdgeInsets.only(top: 5.0),
+                  //                 child: new Text('12 minutes',
+                  //                     style: GoogleFonts.roboto(
+                  //                       color: Color(0xaa2d384c), // 43 (67)
+                  //                       fontSize: 12.50,
+                  //                       fontWeight: FontWeight.w500,
+                  //                     )))
+                  //           ],
+                  //         ))),
                   new Padding(
                       padding: EdgeInsets.only(top: 40.0, bottom: 25.0),
                       child: new Row(
