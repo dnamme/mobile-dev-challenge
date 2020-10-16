@@ -37,17 +37,22 @@ class _HomeState extends State<Home> {
                     children: [
                       new Image.asset(
                           'assets/img/Dog_and_Hooman.png'), // TODO: resize to fit
-                      new Icon(Icons.bookmark,
-                          color: Color(0xff2d384c),
-                          size: 30.0) // TODO: find icon, move icon
+                      Positioned(
+                          left: 30.0,
+                          child: new Icon(Icons.bookmark,
+                              color: Color(0xff2d384c),
+                              size: 50.0)) // TODO: find icon
                     ],
                   ),
                   new Container(
                       decoration: BoxDecoration(
+                          // boxShadow: [
+                          //   BoxShadow(blurRadius: 5.0, spreadRadius: 5.0)
+                          // ],
                           color: Color(0xfffdbd4e),
                           borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(20.0),
-                              bottomRight: Radius.circular(20.0))),
+                              bottomLeft: Radius.circular(15.0),
+                              bottomRight: Radius.circular(15.0))),
                       child: new Padding(
                           padding: EdgeInsets.fromLTRB(17.5, 12.5, 25.0, 12.5),
                           child: new Column(
@@ -58,12 +63,14 @@ class _HomeState extends State<Home> {
                                       color: Color(0xff2d384c),
                                       fontSize: 25.0,
                                       fontWeight: FontWeight.w500)),
-                              new Text('12 minutes',
-                                  style: GoogleFonts.roboto(
-                                      color: Color(0xff2d384c), // 43
-                                      fontSize: 12.50,
-                                      fontWeight:
-                                          FontWeight.w500)) // TODO: padding
+                              new Padding(
+                                  padding: EdgeInsets.only(top: 5.0),
+                                  child: new Text('12 minutes',
+                                      style: GoogleFonts.roboto(
+                                        color: Color(0xaa2d384c), // 43 (67)
+                                        fontSize: 12.50,
+                                        fontWeight: FontWeight.w500,
+                                      ))) // TODO: padding
                             ],
                           )))
                 ],
@@ -111,8 +118,10 @@ class BackgroundPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = new Paint();
 
-    paint.color = Color(0xfffdbd4e);
+    paint.color = Colors.white;
+    canvas.drawRect(new Rect.fromLTRB(0, 0, size.width, size.height), paint);
 
+    paint.color = Color(0xfffdbd4e);
     canvas.drawRect(new Rect.fromLTRB(0, 0, size.width, 170), paint);
   }
 
