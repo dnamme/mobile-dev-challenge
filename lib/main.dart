@@ -102,43 +102,50 @@ class _HomeState extends State<Home> {
                               ),
                             )
                           ])),
-                  new Column(
-                    children: [
-                      new Stack(children: [
-                        new Image.asset('assets/img/Meow_Meow_Eating.png',
-                            width: 175.0),
-                        Positioned(
-                            top: 3.0,
-                            right: 7.5,
-                            child: new Icon(Icons.star_rounded,
-                                color: Color(0xfffdbd4e), size: 35.0))
-                      ]),
-                      new Container(
-                          decoration: BoxDecoration(
-                              color: Color(0xff2d384c),
-                              borderRadius: BorderRadius.only(
-                                  bottomLeft: Radius.circular(15.0),
-                                  bottomRight: Radius.circular(15.0))),
-                          width: 175.0,
-                          child: new Padding(
-                              padding:
-                                  EdgeInsets.fromLTRB(10.0, 5.0, 5.0, 15.0),
-                              child: new Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    new Text('The 8 best cat foods to buy',
-                                        style: GoogleFonts.roboto(
-                                            color: Color(0xffffffff),
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.w500)),
-                                    new Text('8 minutes',
-                                        style: GoogleFonts.roboto(
-                                            color: Color(0xaaffffff),
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.w500))
-                                  ])))
-                    ],
-                  ),
+                  new Container(
+                      decoration: BoxDecoration(
+                          color: Color(0xff2d384c),
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(15.0))),
+                      width: 175.0,
+                      child: new Column(
+                        children: [
+                          new Stack(children: [
+                            new Image.asset('assets/img/Meow_Meow_Eating.png',
+                                width: 175.0),
+                            Positioned(
+                                top: 3.0,
+                                right: 7.5,
+                                child: new Icon(Icons.star_rounded,
+                                    color: Color(0xfffdbd4e), size: 35.0))
+                          ]),
+                          new Container(
+                              // decoration: BoxDecoration(
+                              //     color: Color(0xff2d384c),
+                              //     borderRadius: BorderRadius.only(
+                              //         bottomLeft: Radius.circular(15.0),
+                              //         bottomRight: Radius.circular(15.0))),
+                              // width: 175.0,
+                              child: new Padding(
+                                  padding:
+                                      EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 15.0),
+                                  child: new Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        new Text('The 8 best cat foods to buy',
+                                            style: GoogleFonts.roboto(
+                                                color: Color(0xffffffff),
+                                                fontSize: 12.5,
+                                                fontWeight: FontWeight.w500)),
+                                        new Text('8 minutes',
+                                            style: GoogleFonts.roboto(
+                                                color: Color(0xaaffffff),
+                                                fontSize: 12.5,
+                                                fontWeight: FontWeight.w500))
+                                      ])))
+                        ],
+                      )),
                   new Column(),
                   new Column(),
                   new Column()
