@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
-      //appBar: AppBar(),
+      appBar: AppBar(),
       body:
           new Container(child: new Column(children: [new Text('Hello World')])),
       /*bottomNavigationBar: new BottomNavigationBar(
