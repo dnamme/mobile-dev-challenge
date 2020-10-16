@@ -70,9 +70,33 @@ class _HomeState extends State<Home> {
                                         color: Color(0xaa2d384c), // 43 (67)
                                         fontSize: 12.50,
                                         fontWeight: FontWeight.w500,
-                                      ))) // TODO: padding
+                                      )))
                             ],
-                          )))
+                          ))),
+                  new Row(children: [
+                    new Text('Care',
+                        style: GoogleFonts.roboto(
+                            color: Color(0xff2d384c),
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w500)),
+                    new Container(
+                      decoration: BoxDecoration(
+                          color: Color(0xfffdbd4e),
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(15.0))),
+                      child: new Row(
+                        children: [
+                          new Icon(Icons.star_rounded,
+                              color: Color(0xff2d384c), size: 12.5),
+                          new Text('UPGRADE',
+                              style: GoogleFonts.roboto(
+                                  color: Color(0xff2d384c),
+                                  fontSize: 12.5,
+                                  fontWeight: FontWeight.w500))
+                        ],
+                      ),
+                    )
+                  ]),
                 ],
               ),
             )
