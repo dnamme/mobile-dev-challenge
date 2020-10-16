@@ -73,30 +73,59 @@ class _HomeState extends State<Home> {
                                       )))
                             ],
                           ))),
-                  new Row(children: [
-                    new Text('Care',
-                        style: GoogleFonts.roboto(
-                            color: Color(0xff2d384c),
-                            fontSize: 17.5,
-                            fontWeight: FontWeight.w500)),
-                    new Container(
-                      decoration: BoxDecoration(
-                          color: Color(0xfffdbd4e),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(15.0))),
-                      child: new Row(
-                        children: [
-                          new Icon(Icons.star_rounded,
-                              color: Color(0xff2d384c), size: 12.5),
-                          new Text('UPGRADE',
-                              style: GoogleFonts.roboto(
-                                  color: Color(0xff2d384c),
-                                  fontSize: 12.5,
-                                  fontWeight: FontWeight.w500))
-                        ],
-                      ),
-                    )
-                  ]),
+                  new Padding(
+                      padding: EdgeInsets.only(top: 20.0, bottom: 17.5),
+                      child: new Row(children: [
+                        new Text('Care',
+                            style: GoogleFonts.roboto(
+                                color: Color(0xff2d384c),
+                                fontSize: 17.5,
+                                fontWeight: FontWeight.w500)),
+                        new Container(
+                          decoration: BoxDecoration(
+                              color: Color(0xfffdbd4e),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(15.0))),
+                          padding: EdgeInsets.all(5.0),
+                          child: new Row(
+                            children: [
+                              new Icon(Icons.star_rounded,
+                                  color: Color(0xff2d384c), size: 12.5),
+                              new Text('UPGRADE',
+                                  style: GoogleFonts.roboto(
+                                      color: Color(0xff2d384c),
+                                      fontSize: 12.5,
+                                      fontWeight: FontWeight.w500))
+                            ],
+                          ),
+                        )
+                      ])),
+                  new Column(
+                    children: [
+                      new Image.asset('assets/img/Meow_Meow_Eating.png'),
+                      new Container(
+                          decoration: BoxDecoration(
+                              color: Color(0xff2d384c),
+                              borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(15.0),
+                                  bottomRight: Radius.circular(15.0))),
+                          child: new Column(children: [
+                            new Text('The 8 best cat foods to buy',
+                                style: GoogleFonts.roboto(
+                                    color: Color(0xffffffff),
+                                    fontSize: 12.5,
+                                    fontWeight: FontWeight.w500)),
+                            new Text('8 minutes',
+                                style: GoogleFonts.roboto(
+                                    color: Color(0xaaffffff),
+                                    fontSize: 12.5,
+                                    fontWeight: FontWeight.w500))
+                          ]))
+                    ],
+                  ),
+                  new Column(),
+                  new Column(),
+                  new Column()
                 ],
               ),
             )
