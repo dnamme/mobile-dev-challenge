@@ -55,11 +55,11 @@ flutter:
 
   assets:
     - assets/icons/profile_64px.png
-    # - assets/img/Dog_and_Hooman.png
-    # - assets/img/Judger_Mantis.png
-    # - assets/img/Koi_Desuu.png
-    # - assets/img/Meow_Meow_Eating.png
-    # - assets/img/Rat_Drops.png
+    - assets/img/Dog_and_Hooman.png
+    - assets/img/Judger_Mantis.png
+    - assets/img/Koi_Desuu.png
+    - assets/img/Meow_Meow_Eating.png
+    - assets/img/Rat_Drops.png
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
