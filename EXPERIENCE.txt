@@ -1,0 +1,3 @@
+Creating an app using Flutter (which I have zero experience on) is actually really fun. I had to spend the first two-three days learning about syntax, how to install it, what Widgets and States are. I had a hard time since VS Code was showing me gradle errors that I did not understand, but it all worked out in the end. I also learned that it was possible to extract images from the Figma website, so I was able to download some image files and icon files that were not included in the original .ZIP file.
+
+Overall, Flutter is something that I would like to use more in the future since it was more user-friendly than the usual write-all-Java-code-in-Android-Studio method.
