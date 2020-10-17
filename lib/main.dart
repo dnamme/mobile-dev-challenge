@@ -156,13 +156,13 @@ class Home extends StatelessWidget {
                                                     color: Color(0xffffffff),
                                                     fontSize: 13,
                                                     fontWeight:
-                                                        FontWeight.w500)),
+                                                        FontWeight.w700)),
                                             new Text('8 minutes',
                                                 style: GoogleFonts.roboto(
                                                     color: Color(0xaaffffff),
                                                     fontSize: 13,
                                                     fontWeight:
-                                                        FontWeight.w500))
+                                                        FontWeight.w400))
                                           ]))
                                 ],
                               )),
@@ -206,14 +206,14 @@ class Home extends StatelessWidget {
                                                             Color(0xffffffff),
                                                         fontSize: 12.5,
                                                         fontWeight:
-                                                            FontWeight.w500)),
+                                                            FontWeight.w700)),
                                                 new Text('9 minutes',
                                                     style: GoogleFonts.roboto(
                                                         color:
                                                             Color(0xaaffffff),
                                                         fontSize: 12.5,
                                                         fontWeight:
-                                                            FontWeight.w500))
+                                                            FontWeight.w400))
                                               ])))
                                 ],
                               )),
@@ -268,14 +268,14 @@ class Home extends StatelessWidget {
                                                             Color(0xffffffff),
                                                         fontSize: 12.5,
                                                         fontWeight:
-                                                            FontWeight.w500)),
+                                                            FontWeight.w700)),
                                                 new Text('8 minutes',
                                                     style: GoogleFonts.roboto(
                                                         color:
                                                             Color(0xaaffffff),
                                                         fontSize: 12.5,
                                                         fontWeight:
-                                                            FontWeight.w500))
+                                                            FontWeight.w400))
                                               ])))
                                 ],
                               )),
@@ -319,14 +319,14 @@ class Home extends StatelessWidget {
                                                             Color(0xffffffff),
                                                         fontSize: 12.5,
                                                         fontWeight:
-                                                            FontWeight.w500)),
+                                                            FontWeight.w700)),
                                                 new Text('9 minutes',
                                                     style: GoogleFonts.roboto(
                                                         color:
                                                             Color(0xaaffffff),
                                                         fontSize: 12.5,
                                                         fontWeight:
-                                                            FontWeight.w500))
+                                                            FontWeight.w400))
                                               ])))
                                 ],
                               )),
