@@ -35,90 +35,40 @@ class Paywall extends StatelessWidget {
                           fontWeight: FontWeight.w700)),
                   new CustomPaint(
                       foregroundPainter: GradientPainter(),
-                      child: new SingleChildScrollView(
-                          child: new Column(children: [
-                        new Row(children: [
-                          Expanded(
-                              child: new Container(
-                                  decoration: BoxDecoration(
-                                      color: Color(0xff2d384c),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15.0)),
-                                      boxShadow: [
-                                        new BoxShadow(
-                                            color: Colors.black,
-                                            blurRadius: 3.0)
-                                      ]),
-                                  margin: EdgeInsets.only(
-                                      right: 6.25, bottom: 6.25),
-                                  child: new Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      new Stack(children: [
-                                        new Image.asset(
-                                            'assets/img/Meow_Meow_Eating.png'),
-                                        Positioned(
-                                            top: 3.0,
-                                            right: 7.5,
-                                            child: new Icon(Icons.star_rounded,
-                                                color: Color(0xfffdbd4e),
-                                                size: 35.0))
-                                      ]),
-                                      new Padding(
-                                          padding: EdgeInsets.fromLTRB(
-                                              12.5, 7.0, 5.0, 12.5),
-                                          child: new Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                new Text(
-                                                    'The 8 best cat foods to buy',
-                                                    style: GoogleFonts.roboto(
-                                                        color:
-                                                            Color(0xffffffff),
-                                                        fontSize: 11,
-                                                        fontWeight:
-                                                            FontWeight.w700)),
-                                                new Text('8 minutes',
-                                                    style: GoogleFonts.roboto(
-                                                        color:
-                                                            Color(0xaaffffff),
-                                                        fontSize: 11,
-                                                        fontWeight:
-                                                            FontWeight.w400))
-                                              ]))
-                                    ],
-                                  ))),
-                          Expanded(
-                              child: new Container(
-                                  decoration: BoxDecoration(
-                                      color: Color(0xff2d384c),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15.0)),
-                                      boxShadow: [
-                                        new BoxShadow(
-                                            color: Colors.black,
-                                            blurRadius: 3.0)
-                                      ]),
-                                  margin:
-                                      EdgeInsets.only(left: 6.25, bottom: 6.25),
-                                  child: new Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      new Stack(children: [
-                                        new Image.asset(
-                                            'assets/img/Koi_Desuu.png'),
-                                        Positioned(
-                                            top: 3.0,
-                                            right: 7.5,
-                                            child: new Icon(Icons.star_rounded,
-                                                color: Color(0xfffdbd4e),
-                                                size: 35.0))
-                                      ]),
-                                      new Container(
-                                          child: new Padding(
+                      child: new Container(
+                          height: 190.0,
+                          child: new SingleChildScrollView(
+                              child: new Column(children: [
+                            new Row(children: [
+                              Expanded(
+                                  child: new Container(
+                                      decoration: BoxDecoration(
+                                          color: Color(0xff2d384c),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15.0)),
+                                          boxShadow: [
+                                            new BoxShadow(
+                                                color: Colors.black,
+                                                blurRadius: 3.0)
+                                          ]),
+                                      margin: EdgeInsets.only(
+                                          right: 7.5, bottom: 6.25),
+                                      child: new Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          new Stack(children: [
+                                            new Image.asset(
+                                                'assets/img/Meow_Meow_Eating.png'),
+                                            Positioned(
+                                                top: 3.0,
+                                                right: 7.5,
+                                                child: new Icon(
+                                                    Icons.star_rounded,
+                                                    color: Color(0xfffdbd4e),
+                                                    size: 35.0))
+                                          ]),
+                                          new Padding(
                                               padding: EdgeInsets.fromLTRB(
                                                   12.5, 7.0, 5.0, 12.5),
                                               child: new Column(
@@ -126,7 +76,7 @@ class Paywall extends StatelessWidget {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     new Text(
-                                                        'Do you know fish likes to...',
+                                                        'The 8 best cat foods to buy',
                                                         style:
                                                             GoogleFonts.roboto(
                                                                 color: Color(
@@ -144,126 +94,187 @@ class Paywall extends StatelessWidget {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w400))
-                                                  ])))
-                                    ],
-                                  )))
-                        ]),
-                        new Row(children: [
-                          Expanded(
-                              child: new Container(
-                                  decoration: BoxDecoration(
-                                      color: Color(0xff2d384c),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15.0)),
-                                      boxShadow: [
-                                        new BoxShadow(
-                                            color: Colors.grey, blurRadius: 5.0)
-                                      ]),
-                                  margin:
-                                      EdgeInsets.only(right: 6.25, top: 6.25),
-                                  child: new Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      new Stack(children: [
-                                        new Image.asset(
-                                            'assets/img/Judger_Mantis.png',
-                                            fit: BoxFit.fill),
-                                        Positioned(
-                                            top: 3.0,
-                                            right: 7.5,
-                                            child: new Icon(Icons.star_rounded,
-                                                color: Color(0xfffdbd4e),
-                                                size: 35.0))
-                                      ]),
-                                      new Container(
-                                          child: new Padding(
-                                              padding: EdgeInsets.fromLTRB(
-                                                  12.5, 7.0, 5.0, 12.5),
-                                              child: new Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    new Text('...',
-                                                        style:
-                                                            GoogleFonts.roboto(
+                                                  ]))
+                                        ],
+                                      ))),
+                              Expanded(
+                                  child: new Container(
+                                      decoration: BoxDecoration(
+                                          color: Color(0xff2d384c),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15.0)),
+                                          boxShadow: [
+                                            new BoxShadow(
+                                                color: Colors.black,
+                                                blurRadius: 3.0)
+                                          ]),
+                                      margin: EdgeInsets.only(
+                                          left: 7.5, bottom: 6.25),
+                                      child: new Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          new Stack(children: [
+                                            new Image.asset(
+                                                'assets/img/Koi_Desuu.png'),
+                                            Positioned(
+                                                top: 3.0,
+                                                right: 7.5,
+                                                child: new Icon(
+                                                    Icons.star_rounded,
+                                                    color: Color(0xfffdbd4e),
+                                                    size: 35.0))
+                                          ]),
+                                          new Container(
+                                              child: new Padding(
+                                                  padding: EdgeInsets.fromLTRB(
+                                                      12.5, 7.0, 5.0, 12.5),
+                                                  child: new Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        new Text(
+                                                            'Do you know fish likes to...',
+                                                            style: GoogleFonts.roboto(
                                                                 color: Color(
                                                                     0xffffffff),
                                                                 fontSize: 11,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w700)),
-                                                    new Text('9 minutes',
-                                                        style:
-                                                            GoogleFonts.roboto(
+                                                        new Text('8 minutes',
+                                                            style: GoogleFonts.roboto(
                                                                 color: Color(
                                                                     0xaaffffff),
                                                                 fontSize: 11,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w400))
-                                                  ])))
-                                    ],
-                                  ))),
-                          Expanded(
-                              child: new Container(
-                                  decoration: BoxDecoration(
-                                      color: Color(0xff2d384c),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15.0)),
-                                      boxShadow: [
-                                        new BoxShadow(
-                                            color: Colors.grey, blurRadius: 3.0)
-                                      ]),
-                                  margin:
-                                      EdgeInsets.only(left: 6.25, top: 6.25),
-                                  child: new Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      new Stack(children: [
-                                        new Image.asset(
-                                            'assets/img/Rat_Drops.png',
-                                            fit: BoxFit.fill),
-                                        Positioned(
-                                            top: 3.0,
-                                            right: 7.5,
-                                            child: new Icon(Icons.star_rounded,
-                                                color: Color(0xfffdbd4e),
-                                                size: 35.0))
-                                      ]),
-                                      new Container(
-                                          child: new Padding(
-                                              padding: EdgeInsets.fromLTRB(
-                                                  12.5, 7.0, 5.0, 12.5),
-                                              child: new Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    new Text(
-                                                        'Pet medical that you sho...',
-                                                        style:
-                                                            GoogleFonts.roboto(
+                                                      ])))
+                                        ],
+                                      )))
+                            ]),
+                            new Row(children: [
+                              Expanded(
+                                  child: new Container(
+                                      decoration: BoxDecoration(
+                                          color: Color(0xff2d384c),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15.0)),
+                                          boxShadow: [
+                                            new BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 5.0)
+                                          ]),
+                                      margin: EdgeInsets.only(
+                                          right: 7.5, top: 6.25),
+                                      child: new Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          new Stack(children: [
+                                            new Image.asset(
+                                                'assets/img/Judger_Mantis.png',
+                                                fit: BoxFit.fill),
+                                            Positioned(
+                                                top: 3.0,
+                                                right: 7.5,
+                                                child: new Icon(
+                                                    Icons.star_rounded,
+                                                    color: Color(0xfffdbd4e),
+                                                    size: 35.0))
+                                          ]),
+                                          new Container(
+                                              child: new Padding(
+                                                  padding: EdgeInsets.fromLTRB(
+                                                      12.5, 7.0, 5.0, 12.5),
+                                                  child: new Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        new Text('...',
+                                                            style: GoogleFonts.roboto(
                                                                 color: Color(
                                                                     0xffffffff),
                                                                 fontSize: 11,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w700)),
-                                                    new Text('9 minutes',
-                                                        style:
-                                                            GoogleFonts.roboto(
+                                                        new Text('9 minutes',
+                                                            style: GoogleFonts.roboto(
                                                                 color: Color(
                                                                     0xaaffffff),
                                                                 fontSize: 11,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w400))
-                                                  ])))
-                                    ],
-                                  )))
-                        ])
-                      ]))),
+                                                      ])))
+                                        ],
+                                      ))),
+                              Expanded(
+                                  child: new Container(
+                                      decoration: BoxDecoration(
+                                          color: Color(0xff2d384c),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15.0)),
+                                          boxShadow: [
+                                            new BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 3.0)
+                                          ]),
+                                      margin:
+                                          EdgeInsets.only(left: 7.5, top: 6.25),
+                                      child: new Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          new Stack(children: [
+                                            new Image.asset(
+                                                'assets/img/Rat_Drops.png',
+                                                fit: BoxFit.fill),
+                                            Positioned(
+                                                top: 3.0,
+                                                right: 7.5,
+                                                child: new Icon(
+                                                    Icons.star_rounded,
+                                                    color: Color(0xfffdbd4e),
+                                                    size: 35.0))
+                                          ]),
+                                          new Container(
+                                              child: new Padding(
+                                                  padding: EdgeInsets.fromLTRB(
+                                                      12.5, 7.0, 5.0, 12.5),
+                                                  child: new Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        new Text(
+                                                            'Pet medical that you sho...',
+                                                            style: GoogleFonts.roboto(
+                                                                color: Color(
+                                                                    0xffffffff),
+                                                                fontSize: 11,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w700)),
+                                                        new Text('9 minutes',
+                                                            style: GoogleFonts.roboto(
+                                                                color: Color(
+                                                                    0xaaffffff),
+                                                                fontSize: 11,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w400))
+                                                      ])))
+                                        ],
+                                      )))
+                            ])
+                          ])))),
+                  /*new Expanded(
+                      child: */
                   new Center(
                       child: new CustomPaint(
                           painter: HorizontalRowPainter(),
@@ -319,11 +330,11 @@ class GradientPainter extends CustomPainter {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [Color(0x00fdbd4e), Color(0xfffdbd4e)])
-        .createShader(new Rect.fromLTRB(0, 150, size.width, size.height));
+        .createShader(new Rect.fromLTRB(0, 125, size.width, 190));
 
     // TODO draw gradient
 
-    canvas.drawRect(new Rect.fromLTRB(0, 150, size.width, size.height), paint);
+    canvas.drawRect(new Rect.fromLTRB(0, 125, size.width, 190), paint);
   }
 
   @override
