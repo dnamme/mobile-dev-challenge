@@ -29,40 +29,45 @@ class Paywall extends StatelessWidget {
                           fontSize: 17.0,
                           fontWeight: FontWeight.w700)),
                   //PICTURES
-                  new Stack(alignment: Alignment.center, children: [
-                    new Container(
-                        height: 200.0,
-                        child: new GridView.count(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 12.5,
-                          mainAxisSpacing: 12.5,
-                          children: [
-                            new Container(color: Color(0xffffffff)),
-                            new Container(color: Color(0xffffffff)),
-                            new Container(color: Color(0xffffffff)),
-                            new Container(color: Color(0xffffffff))
-                          ],
-                        )),
-                    Positioned(
-                        bottom: 0.0,
-                        child: new Container(
-                            color: Color(0xfffdbd4e), height: 100.0)),
-                    Positioned(
-                        bottom: 50.0,
-                        child: new Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xff2d384c),
-                                borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(7.5),
-                                    bottomRight: Radius.circular(7.5))),
-                            padding: EdgeInsets.fromLTRB(20.0, 2.5, 20.0, 2.5),
-                            child: new Text('more',
-                                style: GoogleFonts.roboto(
-                                    color: Color(0xaaffffff),
-                                    fontSize: 10.0,
-                                    fontWeight: FontWeight
-                                        .w500)))) // TODO find font weight
-                  ]),
+                  new CustomPaint(
+                      painter: CustomGridPainter(),
+                      child:
+                          new Stack(alignment: Alignment.topCenter, children: [
+                        new Container(
+                            height: 200.0,
+                            color: Colors.black,
+                            child: new GridView.count(
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 12.5,
+                              mainAxisSpacing: 12.5,
+                              children: [
+                                new Container(color: Color(0xffffffff)),
+                                new Container(color: Color(0xffffffff)),
+                                new Container(color: Color(0xffffffff)),
+                                new Container(color: Color(0xffffffff))
+                              ],
+                            )),
+                        Positioned(
+                            top: 200.0,
+                            child: new Container(
+                                color: Color(0xfffdbd4e), height: 100.0)),
+                        Positioned(
+                            bottom: 200.0,
+                            child: new Container(
+                                decoration: BoxDecoration(
+                                    color: Color(0xff2d384c),
+                                    borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(7.5),
+                                        bottomRight: Radius.circular(7.5))),
+                                padding:
+                                    EdgeInsets.fromLTRB(20.0, 2.5, 20.0, 2.5),
+                                child: new Text('more',
+                                    style: GoogleFonts.roboto(
+                                        color: Color(0xaaffffff),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight
+                                            .w500)))) // TODO find font weight
+                      ])),
                   new Center(
                       child: new Container(
                           decoration: BoxDecoration(
@@ -91,5 +96,22 @@ class Paywall extends StatelessWidget {
                               fontSize: 11.0,
                               fontWeight: FontWeight.w500)))
                 ])));
+  }
+}
+
+class CustomGridPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = new Paint();
+
+    paint.color = Color(0xfffdbd4e);
+    paint.color = Colors.greenAccent;
+
+    canvas.drawRect(new Rect.fromLTRB(50, 200, size.width, size.height), paint);
+  }
+
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) {
+    return false;
   }
 }
