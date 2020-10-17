@@ -180,7 +180,7 @@ class Paywall extends StatelessWidget {
                                         children: [
                                           new Stack(children: [
                                             new Image.asset(
-                                                'assets/img/Judger_Mantis.png',
+                                                'assets/img/Bird.png',
                                                 fit: BoxFit.fill),
                                             Positioned(
                                                 top: 3.0,
@@ -232,56 +232,60 @@ class Paywall extends StatelessWidget {
                                       margin:
                                           EdgeInsets.only(left: 7.5, top: 6.25),
                                       child: new Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          new Stack(children: [
-                                            new Image.asset(
-                                                'assets/img/Rat_Drops.png',
-                                                fit: BoxFit.fill),
-                                            Positioned(
-                                                top: 3.0,
-                                                right: 7.5,
-                                                child: new Icon(
-                                                    Icons.star_rounded,
-                                                    color: Color(0xfffdbd4e),
-                                                    size: 35.0))
-                                          ]),
-                                          new Container(
-                                              child: new Padding(
-                                                  padding: EdgeInsets.fromLTRB(
-                                                      12.5, 7.0, 5.0, 12.5),
-                                                  child: new Column(
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        new Text(
-                                                            'Pet medical that you sho...',
-                                                            style: GoogleFonts.roboto(
-                                                                color: Color(
-                                                                    0xffffffff),
-                                                                fontSize: 11,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w700)),
-                                                        new Text('9 minutes',
-                                                            style: GoogleFonts.roboto(
-                                                                color: Color(
-                                                                    0xaaffffff),
-                                                                fontSize: 11,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w400))
-                                                      ])))
-                                        ],
-                                      )))
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            new Stack(children: [
+                                              new Image.asset(
+                                                  'assets/img/Turtle.png',
+                                                  fit: BoxFit.fill),
+                                              Positioned(
+                                                  top: 3.0,
+                                                  right: 7.5,
+                                                  child: new Icon(
+                                                      Icons.star_rounded,
+                                                      color: Color(0xfffdbd4e),
+                                                      size: 35.0))
+                                            ]),
+                                            new Container(
+                                                child: new Padding(
+                                                    padding:
+                                                        EdgeInsets.fromLTRB(
+                                                            12.5,
+                                                            7.0,
+                                                            5.0,
+                                                            12.5),
+                                                    child: new Column(
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          new Text(
+                                                              'Pet medical that you sho...',
+                                                              style: GoogleFonts.roboto(
+                                                                  color: Color(
+                                                                      0xffffffff),
+                                                                  fontSize: 11,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w700)),
+                                                          new Text('9 minutes',
+                                                              style: GoogleFonts.roboto(
+                                                                  color: Color(
+                                                                      0xaaffffff),
+                                                                  fontSize: 11,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w400))
+                                                        ])))
+                                          ])))
                             ])
                           ])))),
                   new Center(
                       child: new CustomPaint(
                           painter: HorizontalRowPainter(),
                           child: new Container(
+                              alignment: Alignment.center,
                               decoration: BoxDecoration(
                                   color: Color(0xff2d384c),
                                   borderRadius: BorderRadius.only(
@@ -291,8 +295,9 @@ class Paywall extends StatelessWidget {
                                   EdgeInsets.fromLTRB(25.0, 3.0, 25.0, 3.0),
                               child: new Text('more',
                                   style: GoogleFonts.roboto(
-                                      color: Color(0xaaffffff),
-                                      fontSize: 11.0))))),
+                                      color: Color(0xffffffff),
+                                      fontSize: 11.0,
+                                      fontWeight: FontWeight.w400))))),
                   new Center(
                       child: new Container(
                           decoration: BoxDecoration(

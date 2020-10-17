@@ -1,11 +1,16 @@
-// import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile_development_challenge/paywall.dart';
 
-void main() => runApp(App());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+
+  runApp(App());
+}
 
 class App extends StatelessWidget {
   @override
@@ -17,14 +22,6 @@ class App extends StatelessWidget {
   }
 }
 
-/*class Home extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _HomeState();
-  }
-}
-
-class _HomeState extends State<Home> {*/
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext buildContext) {

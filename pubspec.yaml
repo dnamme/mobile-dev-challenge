@@ -59,11 +59,13 @@ flutter:
     - assets/icons/learn.png
     - assets/icons/maps.png
     - assets/icons/profile.png
+    - assets/img/Bird.png
     - assets/img/Dog_and_Hooman.png
     - assets/img/Judger_Mantis.png
     - assets/img/Koi_Desuu.png
     - assets/img/Meow_Meow_Eating.png
     - assets/img/Rat_Drops.png
+    - assets/img/Turtle.png
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
