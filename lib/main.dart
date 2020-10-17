@@ -1,8 +1,9 @@
-import 'dart:ffi';
+// import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile_development_challenge/paywall.dart';
 
 void main() => runApp(App());
 
@@ -16,14 +17,15 @@ class App extends StatelessWidget {
   }
 }
 
-class Home extends StatefulWidget {
+/*class Home extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return _HomeState();
   }
 }
 
-class _HomeState extends State<Home> {
+class _HomeState extends State<Home> {*/
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext buildContext) {
     return Scaffold(
@@ -92,7 +94,12 @@ class _HomeState extends State<Home> {
                                     BorderRadius.all(Radius.circular(15.0))),
                             padding: EdgeInsets.fromLTRB(3.0, 1.0, 7.5, 1.0),
                             child: GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                    buildContext,
+                                    MaterialPageRoute(
+                                        builder: (buildContext) => Paywall()));
+                              },
                               child: new Row(children: [
                                 new Icon(Icons.star_rounded,
                                     color: Color(0xff2d384c), size: 17.5),
