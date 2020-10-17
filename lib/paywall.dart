@@ -286,18 +286,19 @@ class Paywall extends StatelessWidget {
                           painter: HorizontalRowPainter(),
                           child: new Container(
                               alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                  color: Color(0xff2d384c),
-                                  borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(8.0),
-                                      bottomRight: Radius.circular(8.0))),
-                              padding:
-                                  EdgeInsets.fromLTRB(25.0, 3.0, 25.0, 3.0),
-                              child: new Text('more',
-                                  style: GoogleFonts.roboto(
-                                      color: Color(0xffffffff),
-                                      fontSize: 11.0,
-                                      fontWeight: FontWeight.w400))))),
+                              child: new Container(
+                                  decoration: BoxDecoration(
+                                      color: Color(0xff2d384c),
+                                      borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(8.0),
+                                          bottomRight: Radius.circular(8.0))),
+                                  padding:
+                                      EdgeInsets.fromLTRB(25.0, 3.0, 25.0, 3.0),
+                                  child: new Text('more',
+                                      style: GoogleFonts.roboto(
+                                          color: Color(0xffffffff),
+                                          fontSize: 11.0,
+                                          fontWeight: FontWeight.w400)))))),
                   new Center(
                       child: new Container(
                           decoration: BoxDecoration(
