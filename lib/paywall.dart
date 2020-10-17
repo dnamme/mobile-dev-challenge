@@ -29,45 +29,102 @@ class Paywall extends StatelessWidget {
                           fontSize: 17.0,
                           fontWeight: FontWeight.w700)),
                   //PICTURES
-                  new CustomPaint(
-                      painter: CustomGridPainter(),
-                      child:
-                          new Stack(alignment: Alignment.topCenter, children: [
-                        new Container(
-                            height: 200.0,
-                            color: Colors.black,
-                            child: new GridView.count(
-                              crossAxisCount: 2,
-                              crossAxisSpacing: 12.5,
-                              mainAxisSpacing: 12.5,
-                              children: [
-                                new Container(color: Color(0xffffffff)),
-                                new Container(color: Color(0xffffffff)),
-                                new Container(color: Color(0xffffffff)),
-                                new Container(color: Color(0xffffffff))
-                              ],
-                            )),
-                        Positioned(
-                            top: 200.0,
-                            child: new Container(
-                                color: Color(0xfffdbd4e), height: 100.0)),
-                        Positioned(
-                            bottom: 200.0,
-                            child: new Container(
-                                decoration: BoxDecoration(
-                                    color: Color(0xff2d384c),
-                                    borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(7.5),
-                                        bottomRight: Radius.circular(7.5))),
-                                padding:
-                                    EdgeInsets.fromLTRB(20.0, 2.5, 20.0, 2.5),
-                                child: new Text('more',
-                                    style: GoogleFonts.roboto(
-                                        color: Color(0xaaffffff),
-                                        fontSize: 10.0,
-                                        fontWeight: FontWeight
-                                            .w500)))) // TODO find font weight
-                      ])),
+                  new Container(
+                      height: 250,
+                      color: Colors.blueAccent,
+                      child: new CustomPaint(
+                          painter: CustomGridPainter(),
+                          child: new Column(children: [
+                            new Container(
+                                height: 200.0,
+                                color: Colors.black,
+                                child: new GridView.count(
+                                  crossAxisCount: 2,
+                                  crossAxisSpacing: 12.5,
+                                  mainAxisSpacing: 12.5,
+                                  children: [
+                                    new Container(
+                                        decoration: BoxDecoration(
+                                            color: Color(0xff2d384c),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(15.0)),
+                                            boxShadow: [
+                                              new BoxShadow(
+                                                  color: Colors.grey,
+                                                  blurRadius: 5.0)
+                                            ]),
+                                        child: new Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            new Stack(children: [
+                                              new Image.asset(
+                                                'assets/img/Meow_Meow_Eating.png',
+                                                /*height: 90.0*/
+                                              ),
+                                              Positioned(
+                                                  top: 3.0,
+                                                  right: 7.5,
+                                                  child: new Icon(
+                                                      Icons.star_rounded,
+                                                      color: Color(0xfffdbd4e),
+                                                      size: 35.0))
+                                            ]),
+                                            new Padding(
+                                                padding: EdgeInsets.fromLTRB(
+                                                    12.5, 7.0, 5.0, 12.5),
+                                                child: new Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      new Text(
+                                                          'The 8 best cat foods to buy',
+                                                          style: GoogleFonts.roboto(
+                                                              color: Color(
+                                                                  0xffffffff),
+                                                              fontSize: 13,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w700)),
+                                                      new Text('8 minutes',
+                                                          style: GoogleFonts
+                                                              .roboto(
+                                                                  color: Color(
+                                                                      0xaaffffff),
+                                                                  fontSize: 13,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w400))
+                                                    ]))
+                                          ],
+                                        )),
+                                    new Container(color: Color(0xffffffff)),
+                                    new Container(color: Color(0xffffffff)),
+                                    new Container(color: Color(0xffffffff))
+                                  ],
+                                )),
+                            // Positioned(
+                            //     top: 200.0,
+                            //     child: new Container(
+                            //         color: Color(0xfffdbd4e), height: 100.0)),
+                            // Positioned(
+                            //     bottom: 200.0,
+                            //     child: new Container(
+                            //         decoration: BoxDecoration(
+                            //             color: Color(0xff2d384c),
+                            //             borderRadius: BorderRadius.only(
+                            //                 bottomLeft: Radius.circular(7.5),
+                            //                 bottomRight: Radius.circular(7.5))),
+                            //         padding: EdgeInsets.fromLTRB(
+                            //             20.0, 2.5, 20.0, 2.5),
+                            //         child: new Text('more',
+                            //             style: GoogleFonts.roboto(
+                            //                 color: Color(0xaaffffff),
+                            //                 fontSize: 10.0,
+                            //                 fontWeight: FontWeight
+                            //                     .w500)))) // TODO find font weight
+                          ]))),
                   new Center(
                       child: new Container(
                           decoration: BoxDecoration(
@@ -107,7 +164,7 @@ class CustomGridPainter extends CustomPainter {
     paint.color = Color(0xfffdbd4e);
     paint.color = Colors.greenAccent;
 
-    canvas.drawRect(new Rect.fromLTRB(50, 200, size.width, size.height), paint);
+    //canvas.drawRect(new Rect.fromLTRB(50, 300, size.width, size.height), paint);
   }
 
   @override
